@@ -30,7 +30,4 @@ In this project we practice building an ETL pipeline using Python, Pandas, and u
    - subcategory.csv
    - campaign.csv
 4. Load the CSV files located under ./Resources folder into the corresponding PostgreSQL tables.
-5. Query the database to verify the data has been loaded correctly. Script "SELECT-queries.sql" located under ./Resources could be used for querying the populated tables.
-
-
-
+5. Query the database to verify the data has been loaded correctly. Script "SELECT-queries.sql" located under ./output folder could be used for querying the populated tables.
