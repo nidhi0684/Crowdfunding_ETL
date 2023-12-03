@@ -29,6 +29,7 @@ CREATE TABLE "Contacts" (
 );
 
 CREATE TABLE "Campaign" (
+    "cf_id" int NOT NULL,
     "contact_id" int   NOT NULL,
     "comapny_name" text   NOT NULL,
     "description" text   NOT NULL,
@@ -41,7 +42,10 @@ CREATE TABLE "Campaign" (
     "launched_date" date   NOT NULL,
     "end_date" date   NOT NULL,
     "category_id" text   NOT NULL,
-    "subcategory_id" text   NOT NULL
+    "subcategory_id" text   NOT NULL,
+    CONSTRAINT "pk_Campaign" PRIMARY KEY (
+        "cf_id"
+     )
 );
 
 ALTER TABLE "Campaign" ADD CONSTRAINT "fk_Campaign_contact_id" FOREIGN KEY("contact_id")
